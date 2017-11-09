@@ -1,4 +1,4 @@
-package com.magazinelabs.repository;
+package com.magazinelabs.data.repository;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
 

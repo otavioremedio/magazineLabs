@@ -6,8 +6,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.magazinelabs.data.entity.Employee;
-import com.magazinelabs.repository.EmployeeRepository;
-import com.magazinelabs.repository.EmployeeRepositoryPageable;
+import com.magazinelabs.data.repository.EmployeeRepository;
+import com.magazinelabs.data.repository.EmployeeRepositoryPageable;
 
 
 @Service
