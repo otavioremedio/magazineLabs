@@ -8,19 +8,19 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="CLIENTE")
-public class Cliente {
+@Table(name="EMPLOYEE")
+public class Employee {
 
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="CLIENTE_ID")
+    @Column(name="EMPLOYEE_ID")
     private long id;
-    @Column(name="NOME")
-    private String nome;
-    @Column(name="SOBRENOME")
-    private String sobrenome;
+    @Column(name="NAME")
+    private String name;
     @Column(name="EMAIL")
     private String email;
+    @Column(name="DEPARTMENT")
+    private String department;
     
 	public long getId() {
 		return id;
@@ -28,17 +28,11 @@ public class Cliente {
 	public void setId(long id) {
 		this.id = id;
 	}
-	public String getNome() {
-		return nome;
+	public String getName() {
+		return name;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public String getSobrenome() {
-		return sobrenome;
-	}
-	public void setSobrenome(String sobrenome) {
-		this.sobrenome = sobrenome;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public String getEmail() {
 		return email;
@@ -46,5 +40,12 @@ public class Cliente {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
+	public String getDepartment() {
+		return department;
+	}
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+   
 }
+	
